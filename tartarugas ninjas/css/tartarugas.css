@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.cabecalho {
+    background-color: #336699;
+    color: #ffffff;
+    padding: 15px;
+    height:12vh;
+}
+.donatello .cabecalho{
+
+    background-color: purple;
+}
+.rafael .cabecalho{
+
+    background-color: red;
+
+}
+.mike .cabecalho{
+
+    background-color: orangered;
+
+}
+.inico .cabecalho{
+
+   background: black;
+
+}
+
+
+
+.conteudo{
+    width: 100%;
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.artigo {
+    width: 70%;
+    padding:1%;
+    display: inline-block;
+}
+
+.perfil{
+    display:block;
+    margin: 25px auto;
+    max-width: 25%;
+}
+
+.barra-lateral-esquerda, .barra-lateral-direita {
+    width:15%;
+    display:inline-block;
+    height:80vh;
+}
+
+
+.barra-lateral-esquerda ul {
+    list-style-type: none;
+    margin: 1%;
+    padding: 1%;
+}
+
+.barra-lateral-esquerda li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #336699;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.donatello .barra-lateral-esquerda li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: purple;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.rafael .barra-lateral-esquerda li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: red;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.mike .barra-lateral-esquerda li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: orangered;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.barra-lateral-esquerda li a {
+    color: #ffffff;
+    text-decoration: none;
+    width:100%;
+    display: block;
+}
+
+.barra-lateral-esquerda li:hover {
+    background-color: #0099cc;
+}
+.donatello .barra-lateral-esquerda li:hover {
+    background-color: rgba(128, 0, 128, 0.418);
+}
+.rafael .barra-lateral-esquerda li:hover {
+    background-color: rgba(255, 0, 0, 0.432) ;
+}
+.mike .barra-lateral-esquerda li:hover {
+    background-color: orangered ;
+}
+
+
+.barra-lateral-direita h2{
+    color: #336699;
+    margin: 10px 0;
+}
+.donatello .barra-lateral-direita h2{
+    color: rgba(128, 0, 128, 0.466);
+    margin: 10px 0;
+}
+.rafael .barra-lateral-direita h2{
+    color: red;
+    margin: 10px 0;
+}
+
+.mike .barra-lateral-direita h2{
+    color: orangered;
+    margin: 10px 0;
+}
+
+.rodape {
+    background:#336699;
+    padding:1%;
+    color: #FFF;
+}
+
+.donatello .rodape {
+    background:purple;
+    padding:1%;
+    color: #FFF;
+}
+.rafael .rodape {
+    background:red;
+    padding:1%;
+    color: #FFF;
+}
+.mike .rodape {
+    background:orangered;
+    padding:1%;
+    color: #FFF;
+}
+
+
+/* Desse ponto em diante estamos falando em responsive*/
+@media screen and (max-width: 768px) {
+    .barra-lateral-esquerda, .barra-lateral-direita {
+        width: 100%;
+        height: 100%;
+        padding:2%;
+    }
+
+    .artigo{
+        padding:2%;
+        width:100%;
+        display: inline-block;
+    }
+
+    .rodape {
+        padding:5%;
+    }    
+}
